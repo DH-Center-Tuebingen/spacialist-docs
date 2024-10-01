@@ -1,0 +1,3 @@
+# Vue Component Structure
+
+To have a clear separation of concerns, there are the rudimentary components that should have no to little dependencies, e.g. Buttons, InputField, Popups, Textelements, ... . And then there are views, which implement those components and add the program functionality, e.g. the basic component is the Login-Component and the Login-View displays said component and hooks all emitted events to the proper api calls.

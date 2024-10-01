@@ -3,6 +3,7 @@ import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 
 export default defineUserConfig({
+  base: '/spacialist-docs/',
   lang: 'en-US',
 
   title: 'Spacialist Documentation',

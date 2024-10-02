@@ -25,5 +25,16 @@ features:
 footer: MIT Licensed | Copyright © 2024
 ---
 
+::: warning
+This documentation is still in the construction phase.
+So we will include all relevant informations over the next 
+months.
+
+Please be patient. Feel free to contribute to that effort
+on [GitHub](http://localhost:8080/spacialist-docs/)
+:::
+
+
+
 
 [default-theme-home]: https://vuejs.press/reference/default-theme/frontmatter.html#home-page

@@ -9,7 +9,7 @@ export default defineUserConfig({
   title: 'Spacialist Documentation',
   description: 'A documentation for the Spacialist project',
 
-  head:[
+  head: [
     ['link', { rel: 'icon', href: './favicon.ico', media: '(prefers-color-scheme: no-preference)' }],
     ['link', { rel: 'icon', href: './favicon.ico', media: '(prefers-color-scheme: light)' }],
     ['link', { rel: 'icon', href: './favicon-white.ico', media: '(prefers-color-scheme: dark)' }],
@@ -20,11 +20,19 @@ export default defineUserConfig({
     logo: '/images/logos/spacialist_logo_lines_tiny_pad.svg',
     logoDark: './images/logos/spacialist_logo_lines_tiny_pad_white.svg',
 
-    navbar: ['/', '/user/guide', '/development/coding-style'],
+    navbar: [
+      '/',
+      '/user/guide',
+      '/development/coding-style',
+      {
+        text: 'GitHub',
+        link: 'https://github.com/DH-Center-Tuebingen/spacialist-docs'
+      }
+    ],
     sidebar: [
       {
         text: 'User Guide',
-        link: '/user/',
+        collapsible: true,
         children: [
           '/user/guide',
           '/user/data'
@@ -32,9 +40,9 @@ export default defineUserConfig({
       },
       {
         text: 'Development',
-        link: '/development/',
+        collapsible: true,
         children: [
-          '/development/coding-structure', 
+          '/development/coding-structure',
           '/development/plugins',
           '/development/docs',
         ]

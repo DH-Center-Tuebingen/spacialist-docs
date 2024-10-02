@@ -1,6 +1,5 @@
 # Coding Style
 
-
 ## General Coding Style
 
 ## HTML

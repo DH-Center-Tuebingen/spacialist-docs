@@ -20,7 +20,26 @@ export default defineUserConfig({
     logo: '/images/logos/spacialist_logo_lines_tiny_pad.svg',
     logoDark: './images/logos/spacialist_logo_lines_tiny_pad_white.svg',
 
-    navbar: ['/', '/coding-style'],
+    navbar: ['/', '/user/guide', '/development/coding-style'],
+    sidebar: [
+      {
+        text: 'User Guide',
+        link: '/user/',
+        children: [
+          '/user/guide',
+          '/user/data'
+        ]
+      },
+      {
+        text: 'Development',
+        link: '/development/',
+        children: [
+          '/development/coding-structure', 
+          '/development/plugins',
+          '/development/docs',
+        ]
+      }
+    ]
   }),
 
   bundler: viteBundler(),

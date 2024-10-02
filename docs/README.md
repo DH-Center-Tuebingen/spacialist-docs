@@ -1,7 +1,8 @@
 ---
 home: true
 title: Home
-heroImage: https://vuejs.press/images/hero.png
+heroImage: ./images/spacialist_logo_lines_black.svg
+heroImageDark: ./images/spacialist_logo_lines_white.svg
 actions:
   - text: User Guide
     link: /user-guide/index.html

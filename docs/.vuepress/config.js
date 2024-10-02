@@ -9,8 +9,16 @@ export default defineUserConfig({
   title: 'Spacialist Documentation',
   description: 'A documentation for the Spacialist project',
 
+  head:[
+    ['link', { rel: 'icon', href: './favicon.ico', media: '(prefers-color-scheme: no-preference)' }],
+    ['link', { rel: 'icon', href: './favicon.ico', media: '(prefers-color-scheme: light)' }],
+    ['link', { rel: 'icon', href: './favicon-white.ico', media: '(prefers-color-scheme: dark)' }],
+
+  ],
+
   theme: defaultTheme({
-    logo: 'https://vuejs.press/images/hero.png',
+    logo: '/images/logos/spacialist_logo_lines_tiny_pad.svg',
+    logoDark: './images/logos/spacialist_logo_lines_tiny_pad_white.svg',
 
     navbar: ['/', '/coding-style'],
   }),

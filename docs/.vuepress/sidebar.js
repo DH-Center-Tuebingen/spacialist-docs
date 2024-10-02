@@ -4,7 +4,12 @@ export default [
         collapsible: true,
         children: [
             '/user/guide',
-            '/user/data'
+            '/user/thesaurex',
+            '/user/data-model',
+            '/user/entity-type',
+            '/user/attribute-types',
+            '/user/attribute',
+            '/user/data-importer'
         ]
     },
     {

@@ -2,6 +2,11 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 
+
+import navbar from './navbar'
+import plugins from './plugins'
+import sidebar from './sidebar'
+
 export default defineUserConfig({
   base: '/spacialist-docs/',
   lang: 'en-US',
@@ -19,35 +24,9 @@ export default defineUserConfig({
   theme: defaultTheme({
     logo: '/images/logos/spacialist_logo_lines_tiny_pad.svg',
     logoDark: './images/logos/spacialist_logo_lines_tiny_pad_white.svg',
-
-    navbar: [
-      '/',
-      '/user/guide',
-      '/development/coding-style',
-      {
-        text: 'GitHub',
-        link: 'https://github.com/DH-Center-Tuebingen/spacialist-docs'
-      }
-    ],
-    sidebar: [
-      {
-        text: 'User Guide',
-        collapsible: true,
-        children: [
-          '/user/guide',
-          '/user/data'
-        ]
-      },
-      {
-        text: 'Development',
-        collapsible: true,
-        children: [
-          '/development/coding-structure',
-          '/development/plugins',
-          '/development/docs',
-        ]
-      }
-    ]
+    navbar,
+    sidebar,
+    plugins,
   }),
 
   bundler: viteBundler(),

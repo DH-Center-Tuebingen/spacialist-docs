@@ -131,3 +131,15 @@ Has two parts. A time span field and a thesaurus dropdown field to specify the e
 `START;END;EPOCH_CONCEPT` e.g. `-100;30;antiquity`
 
 A start year and a end year in the gregorian calendar as integer values. Optional can be an epoch thesaurus concept. If the year is a negative number, it refers to the time before christ.
+
+## Geography (WKT)
+
+![Image of the geography input](./images/attribute-types/geography.png)
+
+Adds a geographical attribute to the entity. Currently they cannot be linked on the main map. Each entity has a single field for geo referencing internally.
+
+## Import Format
+
+`WKT_STRING` e.g. `POINT(1 1)`
+
+Any valid WKT string, a good overview of these strings can be found on [Wikipedia](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry).

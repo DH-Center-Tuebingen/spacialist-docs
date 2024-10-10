@@ -1,5 +1,6 @@
 ---
 layout: GridLayout
+title: User
 grid:
   - icon: "./images/feature-icons/web-based.svg"
     title: Web-based Software

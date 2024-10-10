@@ -5,7 +5,7 @@ export default [
         children: [
             '/user/guide',
             '/user/geodata',
-            '/user/thesaurex',
+            '/user/thesaurus',
             '/user/data-model',
             '/user/entity-type',
             '/user/attribute-types',

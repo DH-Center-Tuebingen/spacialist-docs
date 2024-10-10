@@ -2,7 +2,6 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 
-
 import navbar from './navbar'
 import plugins from './plugins'
 import sidebar from './sidebar'
@@ -20,13 +19,13 @@ export default defineUserConfig({
     ['link', { rel: 'icon', href: './favicon-white.ico', media: '(prefers-color-scheme: dark)' }],
 
   ],
+  plugins,
 
   theme: defaultTheme({
     logo: '/images/logos/spacialist_logo_lines_tiny_pad.svg',
     logoDark: './images/logos/spacialist_logo_lines_tiny_pad_white.svg',
     navbar,
     sidebar,
-    plugins,
   }),
 
   bundler: viteBundler(),

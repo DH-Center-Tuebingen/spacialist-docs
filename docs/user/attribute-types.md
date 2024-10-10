@@ -3,7 +3,11 @@
 The Spacialist provides a big variety of different attribute types that can be used inside your [Data Model](/user/data-model).
 Named versions of those *Attribute Types* are used to populate the [Entity Types](./entity-type).
 
-In the next section we'll introduce all available attribute types, what they are used for and how the import data has to be formatted.
+In the next section we'll introduce all available attribute types, what they are used for and how the import data has to be formatted. Note the following special symbols that may be used in the formatting, which will not be typed and have only semantic meaning.
+
++ ... - is a placeholder for various content
++ \[...\] - Stand for optional syntax, the squared brackets should be ignored
++ [... ⟳] - Stands for an expression that can be repeated indefinetly
 
 
 ## Boolean
@@ -143,3 +147,38 @@ Adds a geographical attribute to the entity. Currently they cannot be linked on 
 `WKT_STRING` e.g. `POINT(1 1)`
 
 Any valid WKT string, a good overview of these strings can be found on [Wikipedia](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry).
+
+## Iconclass
+
+![Image of the iconclass input](./images/attribute-types/iconclass.png)
+
+Can be used to collect data as Iconclass objects, as specified at [https://iconclass.org/](https://iconclass.org/).
+
+## Import Format
+
+`ICONCLASS_STRING` e.g. `22A311`
+
+Any iconclass string as defined at [https://iconclass.org/](https://iconclass.org/).
+
+## Integer
+
+![Image of the integer input](./images/attribute-types/integer.png)
+
+Field for integer values
+
+## Import Format
+
+`INT_VAL` e.g. `5`
+
+Can be any integer number `x` that is in the valid range of [PHP_INT_MIN](https://www.php.net/manual/en/reserved.constants.php#constant.php-int-min)  < x <[PHP_INT_MAX](https://www.php.net/manual/en/reserved.constants.php#constant.php-int-max).
+
+## List attribute
+
+![Image of list input](./images/attribute-types/list.png)
+
+Field for a list of text values.
+
+## Import Format
+
+`TEXT[;TEXT ⟳]`
+

@@ -1,0 +1,32 @@
+{
+    "html.format.wrapAttributes": "force-expand-multiline",
+    //PHP
+    "intelephense.format.braces": "k&r",
+    "intelephense.format.enable": false,
+    //Typescript
+    "typescript.format.insertSpaceBeforeFunctionParenthesis": false,
+    // JavaScript
+    "javascript.format.enable": true,
+    "javascript.format.insertSpaceBeforeFunctionParenthesis": false,
+    "javascript.format.insertSpaceAfterKeywordsInControlFlowStatements": false,
+    // "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+    // VUE
+    "vue.format.wrapAttributes": "force-expand-multiline",
+    "vue.format.script.initialIndent": true,
+    "vue.format.style.initialIndent": true,
+    "vue.format.template.initialIndent": true,
+    // Volar
+    "volar.format.initialIndent": {
+        "html": true,
+        "css": true,
+        "javascript": true
+    },
+    // General
+    "editor.trimAutoWhitespace": false,
+    // CSS
+    "css.format.spaceAroundSelectorSeparator": true,
+    //SCSS
+    "scss.format.spaceAroundSelectorSeparator": true,
+    // XML
+    "xml.format.splitAttributes": "splitNewLine"
+}

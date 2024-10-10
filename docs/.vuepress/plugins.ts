@@ -1,8 +1,10 @@
 import { searchPlugin } from '@vuepress/plugin-search'
-
-console.log(searchPlugin())
+import { mediumZoomPlugin } from '@vuepress/plugin-medium-zoom'
 
 export default [
+    mediumZoomPlugin({
+        selector: '[vp-content] :not(a) > img:not(.no-zoom)'
+    }),
     // This seems not to be working. The search bar is not displayed.
     searchPlugin({
         locales: {

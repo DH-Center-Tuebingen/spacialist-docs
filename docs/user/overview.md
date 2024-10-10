@@ -34,7 +34,7 @@ grid:
     title: Analysis
     details: User-Interface to run elaborate queries without the need to write SQL.
 ---
-# User Guide
+# Overview
 
 Spacialist is a versatile, highly customizable, user-friendly database management solution for the sciences and the digital humanities in peticular. The application has a wide variety of features. 
 

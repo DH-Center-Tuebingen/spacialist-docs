@@ -9,7 +9,7 @@ actions:
     type: primary
 
   - text: Coding Guide
-    link: /development/coding-style.html
+    link: /developer/coding-style.html
     type: primary
 
 

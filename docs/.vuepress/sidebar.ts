@@ -1,9 +1,9 @@
 export default [
     {
-        text: 'User Guide',
+        text: 'User',
         collapsible: true,
         children: [
-            '/user/guide',
+            '/user/overview',
             '/user/geodata',
             '/user/thesaurus',
             '/user/data-model',
@@ -14,12 +14,13 @@ export default [
         ]
     },
     {
-        text: 'Development',
+        text: 'Developer',
         collapsible: true,
         children: [
-            '/development/coding-structure',
-            '/development/plugins',
-            '/development/docs',
+            '/developer/overview',
+            '/developer/coding-structure',
+            '/developer/plugins',
+            '/developer/docs',
         ]
     }
 ]

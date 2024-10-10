@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.18" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const userMode = localStorage.getItem('vuepress-color-scheme')
+      const systemDarkMode =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (userMode === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (userMode === 'dark' || systemDarkMode) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" href="./favicon.ico" media="(prefers-color-scheme: no-preference)"><link rel="icon" href="./favicon.ico" media="(prefers-color-scheme: light)"><link rel="icon" href="./favicon-white.ico" media="(prefers-color-scheme: dark)"><title>Spacialist Documentation</title><meta name="description" content="A documentation for the Spacialist project">
+    <link rel="preload" href="/spacialist-docs/assets/style-BMozMMuq.css" as="style"><link rel="stylesheet" href="/spacialist-docs/assets/style-BMozMMuq.css">
+    <link rel="modulepreload" href="/spacialist-docs/assets/app-CfEDbAYP.js"><link rel="modulepreload" href="/spacialist-docs/assets/404.html-CffP_pc1.js">
+    <link rel="prefetch" href="/spacialist-docs/assets/index.html-Ctst79wg.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/coding-structure.html-BBhr05Up.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/coding-style.html-BMQdUAC7.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/docs.html-c0Vplb0c.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/plugins.html-B4HlTNUo.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/attribute-types.html-WaoKbKx3.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/attribute.html-c5Ddiym9.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/data-importer.html-DxXaNTJk.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/data-model.html-DWpS5dWF.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/entity-type.html-2ur60_vX.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/geodata.html-CARroLNl.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/guide.html-B4pA40AU.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/thesaurex.html-PZt8UzyC.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/vue-structure.html-7Ew3CuEu.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-1eac0bed><main class="page" data-v-1eac0bed><div class="theme-default-content" vp-content data-v-1eac0bed><h1 data-v-1eac0bed>404</h1><blockquote data-v-1eac0bed>Looks like we&#39;ve got some broken links.</blockquote><a class="route-link" href="/spacialist-docs/" data-v-1eac0bed>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/spacialist-docs/assets/app-CfEDbAYP.js" defer></script>
+  </body>
+</html>

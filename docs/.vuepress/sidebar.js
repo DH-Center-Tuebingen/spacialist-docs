@@ -4,6 +4,7 @@ export default [
         collapsible: true,
         children: [
             '/user/guide',
+            '/user/geodata',
             '/user/thesaurex',
             '/user/data-model',
             '/user/entity-type',

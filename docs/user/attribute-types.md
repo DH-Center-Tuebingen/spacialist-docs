@@ -172,7 +172,7 @@ Field for integer values
 
 Can be any integer number `x` that is in the valid range of [PHP_INT_MIN](https://www.php.net/manual/en/reserved.constants.php#constant.php-int-min)  < x <[PHP_INT_MAX](https://www.php.net/manual/en/reserved.constants.php#constant.php-int-max).
 
-## List attribute
+## List
 
 ![Image of list input](./images/attribute-types/list.png)
 
@@ -182,3 +182,14 @@ Field for a list of text values.
 
 `TEXT[;TEXT ⟳]`
 
+## Percentage
+
+![Image of percentage input](percentage.png)
+
+Field that allows 
+
+## Import Format
+
+`X` e.g. `33`
+
+`X` is an integer value in the form of: 0 <= `X` <= 100.

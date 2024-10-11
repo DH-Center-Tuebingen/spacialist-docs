@@ -12,6 +12,9 @@ In the next section we'll introduce all available attribute types, what they are
 
 ## Boolean
 
+
+![Image of checkbox input](./images/attribute-types/checkbox.png)
+
 Used for single checkbox to represent the binary values `true`and `false`.
 
 ### Import Format
@@ -106,7 +109,7 @@ The concept name must match excactly the concept that you want to import. The co
 
 A dropdown for selecting a single entity. Can be limited to a specific entity type. 
 
-## Import Format
+### Import Format
 
 `ENTITY_NAME`
 
@@ -130,7 +133,7 @@ The entities to import. Must match the entity name (case-sensitive).
 
 Has two parts. A time span field and a thesaurus dropdown field to specify the epoch.
 
-## Import Format
+### Import Format
 
 `START;END;EPOCH_CONCEPT` e.g. `-100;30;antiquity`
 
@@ -142,7 +145,7 @@ A start year and a end year in the gregorian calendar as integer values. Optiona
 
 Adds a geographical attribute to the entity. Currently they cannot be linked on the main map. Each entity has a single field for geo referencing internally.
 
-## Import Format
+### Import Format
 
 `WKT_STRING` e.g. `POINT(1 1)`
 
@@ -154,7 +157,7 @@ Any valid WKT string, a good overview of these strings can be found on [Wikipedi
 
 Can be used to collect data as Iconclass objects, as specified at [https://iconclass.org/](https://iconclass.org/).
 
-## Import Format
+### Import Format
 
 `ICONCLASS_STRING` e.g. `22A311`
 
@@ -166,7 +169,7 @@ Any iconclass string as defined at [https://iconclass.org/](https://iconclass.or
 
 Field for integer values
 
-## Import Format
+### Import Format
 
 `INT_VAL` e.g. `5`
 
@@ -178,18 +181,150 @@ Can be any integer number `x` that is in the valid range of [PHP_INT_MIN](https:
 
 Field for a list of text values.
 
-## Import Format
+### Import Format
 
 `TEXT[;TEXT ⟳]`
 
+An arbitrary number of items separated by a semicolon.
+
 ## Percentage
 
-![Image of percentage input](percentage.png)
+![Image of percentage input](./images/attribute-types/percentage.png)
 
 Field that allows 
 
-## Import Format
+### Import Format
 
 `X` e.g. `33`
 
 `X` is an integer value in the form of: 0 <= `X` <= 100.
+
+## Richtext
+
+This creates a textarea with formatted text, allowing various text decorations
+that are specified in the very simple [Markdown Syntax](https://www.markdownguide.org/cheat-sheet/).
+
+![Image of rich-text input](./images/attribute-types/rich-text.png)
+
+Spacialist offers a convenient editor to edit these text with tools most know from Softwares like
+Word.
+
+![Image of rich-text input](./images/attribute-types/rich-text-editing.png)
+
+The unformatted Markdown text looks like this.
+
+![Image of rich-text input](./images/attribute-types/rich-text-markdown.png)
+
+
+### Import Format
+
+`X` e.g. 
+
+> \# Heading
+> 
+> Some Text with \*\*bold\*\* or \_italic\_ or  \~struck out~\
+
+`X` is a text string that may contain markdown syntax.
+
+## RISM
+
+![Image of rism input](./images/attribute-types/rism.png)
+
+Id to a musical peace inside the [RISM catalog](https://rism.info/).
+
+### Import Format
+
+`X` e.g. `600146721`
+
+`X` needs to be a positive integer value.
+
+## Serial
+
+![Image of serial input](./images/attribute-types/serial.png)
+
+The serial attribute counts all entities that have this attribute attached and displays a distinct index number for every one of them.
+To use the counter you must use the `%d`marker during the creation of this attribute. This allows to create meaningful tags e.g. `find_#%d` which results in `find_#5`.
+The order of the enumeration is the time the entity was created. To ensure always `n`glyphs in the counter (e.g. #003) you may use the syntax `%03d`.
+
+::: warning
+ThiA serial is not a persistent id, as it may change. When some entities are created at the same time or an entity type receives or loses this attribute, the enumeration will change!
+::: 
+
+### Import Format
+
+::: danger
+Serial values cannot be imported
+:::
+
+## Si Unit
+
+![Image of si-unit input](./images/attribute-types/si-unit.png)
+
+A numeric input associated with a si unit. The si type (e.g. mass or temperature) is fixed when creating the attribute. The si 'prefix' (e.g. kg, g, t) can be changed by the user.
+
+### Import Format
+
+`VALUE;UNIT` e.g. `80;kg`
+
+`VALUE` must be a numeric value. `UNIT` must be a supported unit.
+
+
+## Time Period
+
+![Image of timeperiod input](./images/attribute-types/timeperiod.png)
+
+A span of two years (as integers).
+
+### Import Format
+
+`START;END` e.g. `-100;30`
+
+A start year and a end year in the gregorian calendar as integer values. If the year is a negative number, it refers to the time before christ. The start year must be before the end year.
+
+## Textbox
+![Image of textbox input](./images/attribute-types/textbox.png)
+
+A textbox for short, unformatted texts.
+
+### Import Format
+
+`X` e.g. `This is a note`
+
+`X` is any string.
+
+## Textfield
+
+![Image of stringfield input](./images/attribute-types/stringfield.png)
+
+A textarea for longer, unformatted texts.
+
+### Import Format
+
+`X` e.g. `This is a note`
+
+`X` is any string.
+
+## URL
+
+
+![Image of url input](./images/attribute-types/url.png)
+
+A textfield that contains a link. The field can be clicked to visit that website in a new tab.
+
+### Import Format
+
+`X` e.g. `https://uni-tuebingen.de`
+
+`X` is any string.
+
+## UserList
+
+![Image of user-list input](./images/attribute-types/user-list.png)
+
+A list of users.
+
+### Import Format
+
+`USER_1;USER_2` e.g. `john;admin`
+
+`USER` must be an existing nickname of a user.

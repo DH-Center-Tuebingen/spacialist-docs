@@ -26,6 +26,7 @@ export default defineUserConfig({
     logoDark: './images/logos/spacialist_logo_lines_tiny_pad_white.svg',
     navbar,
     sidebar,
+    sidebarDepth: 1,
   }),
 
   bundler: viteBundler(),

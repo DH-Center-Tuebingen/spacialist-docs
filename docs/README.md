@@ -4,12 +4,12 @@ title: Home
 heroImage: ./images/spacialist_logo_lines_black.svg
 heroImageDark: ./images/spacialist_logo_lines_white.svg
 actions:
-  - text: User Guide
-    link: /user/guide.html
+  - text: For Users
+    link: /user/overview
     type: primary
 
-  - text: Coding Guide
-    link: /developer/coding-style.html
+  - text: For Developers
+    link: /developer/overview
     type: primary
 
 

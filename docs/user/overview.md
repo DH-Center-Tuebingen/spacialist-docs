@@ -1,20 +1,20 @@
 ---
 layout: GridLayout
-title: User
 grid:
   - icon: "./images/feature-icons/web-based.svg"
     title: Web-based Software
     details: The client can be accessed on any computer using a standard browser.
   - icon: "./images/feature-icons/custom.svg"
-    link: "./data-model.md"
+    link: "./data-model"
     title: Customizable Data Model
     details: Highly flexible project-specific data models with a wide range of attribute types.
   - icon: "./images/feature-icons/thesaurus.svg"
-    link: "./thesaurus.md"
+    link: "./thesaurus"
     title: Thesaurus
     details:  Multilingual and centrally controlled vocabulary for compliant with the SKOS standard.
   - icon: "./images/feature-icons/bib.svg"
     title: Bibliography
+    link: ./bibliography
     details: Basic bibliography management, allowing BibTex import and export.
   - icon: "./images/feature-icons/user.svg"
     title: User & Role Management

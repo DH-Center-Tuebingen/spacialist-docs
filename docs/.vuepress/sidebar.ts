@@ -21,6 +21,13 @@ export default [
             '/developer/overview',
             '/developer/coding-structure',
             '/developer/plugins',
+            {
+                text: 'Classes',
+                collapsible: true,
+                children: [
+                    '/developer/classes/entity_type',
+                ]
+            },
             '/developer/docs',
         ]
     }

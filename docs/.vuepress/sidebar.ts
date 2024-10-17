@@ -10,6 +10,7 @@ export default [
             '/user/entity-type',
             '/user/attribute-types',
             '/user/attribute',
+            '/user/bibliography',
             '/user/data-importer'
         ]
     },

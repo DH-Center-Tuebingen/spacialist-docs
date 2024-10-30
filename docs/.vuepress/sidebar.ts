@@ -17,10 +17,11 @@ export default [
     {
         text: 'Developer',
         collapsible: true,
+        prefix: '/developer/',
         children: [
-            '/developer/overview',
-            '/developer/coding-structure',
-            '/developer/plugins',
+            'overview',
+            'coding-structure',
+            'plugins',
             {
                 text: 'Classes',
                 collapsible: true,
@@ -28,7 +29,15 @@ export default [
                     '/developer/classes/entity_type',
                 ]
             },
-            '/developer/docs',
+            {
+                text: 'Commands',
+                collapsible: true,
+                prefix: '/developer/commands/',
+                children: [
+                    'export-types',
+                    'refresh-testing'
+                ]
+            },
         ]
     }
 ]

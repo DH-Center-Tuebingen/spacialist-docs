@@ -22,6 +22,8 @@ export default defineUserConfig({
   plugins,
 
   theme: defaultTheme({
+    repo: 'DH-Center-Tuebingen/spacialist-docs',
+    docsDir: 'docs',
     logo: '/images/logos/spacialist_logo_lines_tiny_pad.svg',
     logoDark: './images/logos/spacialist_logo_lines_tiny_pad_white.svg',
     navbar,

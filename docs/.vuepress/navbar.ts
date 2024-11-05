@@ -1,6 +1,9 @@
 export default [
     '/',
-    '/user/overview',
+    {
+      text: 'User',
+      link: '/user/overview',
+    },
     '/developer/overview',
     {
       text: 'GitHub',

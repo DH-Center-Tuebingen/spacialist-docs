@@ -24,7 +24,7 @@
                                 <img
                                     v-if="item.icon"
                                     class="no-zoom"
-                                    :src="item.icon"
+                                    :src="getImage(item.icon)"
                                     alt=""
                                 >
                             </div>
@@ -43,7 +43,7 @@
 
 <script lang="ts">
     import Layout from '@vuepress/theme-default/lib/client/layouts/Layout.vue'
-    import { Content, resolveRoutePath } from 'vuepress/client';
+    import { Content, resolveRoutePath, withBase } from 'vuepress/client';
 
     export default {
         components: {
@@ -57,10 +57,15 @@
                 }
                 return '';
             } 
+            
+            const getImage = (icon) => {
+                return withBase(icon);
+            }
 
             return {
                 Content,
                 hrefOf,
+                getImage,
                 resolveRoutePath,
             }
         }

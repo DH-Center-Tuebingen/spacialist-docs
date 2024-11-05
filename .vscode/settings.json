@@ -28,5 +28,8 @@
     //SCSS
     "scss.format.spaceAroundSelectorSeparator": true,
     // XML
-    "xml.format.splitAttributes": "splitNewLine"
+    "xml.format.splitAttributes": "splitNewLine",
+    "cSpell.words": [
+        "Spacialist"
+    ]
 }

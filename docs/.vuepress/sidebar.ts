@@ -2,16 +2,18 @@ export default [
     {
         text: 'User',
         collapsible: true,
+        prefix: '/user/',
         children: [
-            '/user/overview',
-            '/user/geodata',
-            '/user/thesaurus',
-            '/user/data-model',
-            '/user/entity-type',
-            '/user/attribute-types',
-            '/user/attribute',
-            '/user/bibliography',
-            '/user/data-importer'
+            'overview',
+            'geodata',
+            'thesaurus',
+            'data-model',
+            'entity-type',
+            'attribute-types',
+            'attribute',
+            'bibliography',
+            'data-importer',
+            'data-analysis',
         ]
     },
     {

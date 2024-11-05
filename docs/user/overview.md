@@ -33,6 +33,7 @@ grid:
     details: The map plugin provides a light-weight GIS interface to visualize the data on maps.
   - icon: "./images/feature-icons/analysis.svg"
     title: Analysis
+    link: "./data-analysis"
     details: User-Interface to run elaborate queries without the need to write SQL.
 ---
 # Overview

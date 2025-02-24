@@ -248,18 +248,6 @@ A dropdown that is populated by thesaurus concepts and allows the selection of e
 
 The concept name must match excactly the concept that you want to import. The concept can be in any language.
 
-## Time Period
-
-![Image of timeperiod input](./images/attribute-types/timeperiod.png)
-
-A span of two years (as integers).
-
-### Import Format
-
-`START;END` e.g. `-100;30`
-
-A start year and a end year in the gregorian calendar as integer values. If the year is a negative number, it refers to the time before christ. The start year must be before the end year.
-
 ## Textbox
 ![Image of textbox input](./images/attribute-types/textbox.png)
 
@@ -282,6 +270,18 @@ A textarea for longer, unformatted texts.
 `X` e.g. `This is a note`
 
 `X` is any string.
+
+## Time Period
+
+![Image of timeperiod input](./images/attribute-types/timeperiod.png)
+
+A span of two years (as integers).
+
+### Import Format
+
+`START;END` e.g. `-100;30`
+
+A start year and a end year in the gregorian calendar as integer values. If the year is a negative number, it refers to the time before christ. The start year must be before the end year.
 
 ## Time Period and Epoch
 

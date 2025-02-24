@@ -10,7 +10,7 @@ In the next section we'll introduce all available attribute types, what they are
 + [... ⟳] - Stands for an expression that can be repeated indefinetly
 
 
-## Boolean
+## Checkbox
 
 
 ![Image of checkbox input](./images/attribute-types/checkbox.png)
@@ -66,43 +66,6 @@ This attribute represents the extends of a three-dimensional object, with width,
 
 The values `W`,`H` and `D` must be numeric values. And the `UNIT` value may be any string. Those values need to be separated by a semicolon `;`.
 
-
-## Double (Floating Point Number)
-
-![Image of the double input](./images/attribute-types/double.png)
-
-Represents a floating point number.
-
-### Import Format
-
-`N`
-
-Must be any valid floating point number representation using a `.` as a decimal separator. `234`, `-18`, `2.3`, `1.2e3` or `7E-10`.
-
-## Dropdown Multiple
-
-![Image of the dropdown multiple input](./images/attribute-types/multiple-dropdown.png)
-
-A dropdown that allows selelcting from a list of concepts from the thesaurus.
-
-### Import Format
-
-`CONCEPT_1;CONCEPT_2;CONCEPT_3;[...]` e.g. `Red;Green;Blue`
-
-A list of concepts that is separated with a semicolon `;`. For more infos see `Dropdown Single`
-
-## Dropdown Single
-
-![Image of the dropdown single input](./images/attribute-types/single-dropdown.png)
-
-A dropdown that is populated by thesaurus concepts and allows the selection of exactly one item. 
-
-### Import Format
-
-`CONCEPT_NAME` e.g. `Red`
-
-The concept name must match excactly the concept that you want to import. The concept can be in any language.
-
 ## Entity
 
 ![Image of the entity single input](./images/attribute-types/entity-single-dropdown.png)
@@ -115,7 +78,7 @@ A dropdown for selecting a single entity. Can be limited to a specific entity ty
 
 The entity name must match the entity (case-sensitive).
 
-## Entity Multiple
+## Entity (Multiple Choice)
 
 ![Image of the entity multiple input](./images/attribute-types/entity-multiple-dropdown.png)
 
@@ -127,29 +90,11 @@ A dropdown for selecting multiple entites. Can be limited to a specific type.
 
 The entities to import. Must match the entity name (case-sensitive).
 
-## Epoch
-
-![Image of the epoch input](./images/attribute-types/epoch.png)
-
-Has two parts. A time span field and a thesaurus dropdown field to specify the epoch.
-
 ### Import Format
 
 `START;END;EPOCH_CONCEPT` e.g. `-100;30;antiquity`
 
 A start year and a end year in the gregorian calendar as integer values. Optional can be an epoch thesaurus concept. If the year is a negative number, it refers to the time before christ.
-
-## Geography (WKT)
-
-![Image of the geography input](./images/attribute-types/geography.png)
-
-Adds a geographical attribute to the entity. Currently they cannot be linked on the main map. Each entity has a single field for geo referencing internally.
-
-### Import Format
-
-`WKT_STRING` e.g. `POINT(1 1)`
-
-Any valid WKT string, a good overview of these strings can be found on [Wikipedia](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry).
 
 ## Iconclass
 
@@ -163,18 +108,6 @@ Can be used to collect data as Iconclass objects, as specified at [https://iconc
 
 Any iconclass string as defined at [https://iconclass.org/](https://iconclass.org/).
 
-## Integer
-
-![Image of the integer input](./images/attribute-types/integer.png)
-
-Field for integer values
-
-### Import Format
-
-`INT_VAL` e.g. `5`
-
-Can be any integer number `x` that is in the valid range of [PHP_INT_MIN](https://www.php.net/manual/en/reserved.constants.php#constant.php-int-min)  < x <[PHP_INT_MAX](https://www.php.net/manual/en/reserved.constants.php#constant.php-int-max).
-
 ## List
 
 ![Image of list input](./images/attribute-types/list.png)
@@ -186,6 +119,41 @@ Field for a list of text values.
 `TEXT[;TEXT ⟳]`
 
 An arbitrary number of items separated by a semicolon.
+
+## Multiple Choice Dropdown
+
+![Image of the dropdown multiple input](./images/attribute-types/multiple-dropdown.png)
+
+A dropdown that allows selelcting from a list of concepts from the thesaurus.
+
+### Import Format
+
+`CONCEPT_1;CONCEPT_2;CONCEPT_3;[...]` e.g. `Red;Green;Blue`
+
+A list of concepts that is separated with a semicolon `;`. For more infos see `Dropdown Single`
+
+## Numeric Input (Floating Point)
+![Image of the double input](./images/attribute-types/double.png)
+
+Represents a floating point number.
+
+### Import Format
+
+`N`
+
+Must be any valid floating point number representation using a `.` as a decimal separator. `234`, `-18`, `2.3`, `1.2e3` or `7E-10`.
+
+## Numeric Input (Integer)
+
+![Image of the integer input](./images/attribute-types/integer.png)
+
+Field for integer values
+
+### Import Format
+
+`INT_VAL` e.g. `5`
+
+Can be any integer number `x` that is in the valid range of [PHP_INT_MIN](https://www.php.net/manual/en/reserved.constants.php#constant.php-int-min)  < x <[PHP_INT_MAX](https://www.php.net/manual/en/reserved.constants.php#constant.php-int-max).
 
 ## Percentage
 
@@ -268,6 +236,17 @@ A numeric input associated with a si unit. The si type (e.g. mass or temperature
 
 `VALUE` must be a numeric value. `UNIT` must be a supported unit.
 
+## Single Choice Dropdown
+
+![Image of the dropdown single input](./images/attribute-types/single-dropdown.png)
+
+A dropdown that is populated by thesaurus concepts and allows the selection of exactly one item. 
+
+### Import Format
+
+`CONCEPT_NAME` e.g. `Red`
+
+The concept name must match excactly the concept that you want to import. The concept can be in any language.
 
 ## Time Period
 
@@ -304,8 +283,13 @@ A textarea for longer, unformatted texts.
 
 `X` is any string.
 
-## URL
+## Time Period and Epoch
 
+![Image of the epoch input](./images/attribute-types/epoch.png)
+
+Has two parts. A time span field and a thesaurus dropdown field to specify the epoch.
+
+## URL
 
 ![Image of url input](./images/attribute-types/url.png)
 
@@ -328,3 +312,15 @@ A list of users.
 `USER_1;USER_2` e.g. `john;admin`
 
 `USER` must be an existing nickname of a user.
+
+## WKT (Geography)
+
+![Image of the geography input](./images/attribute-types/geography.png)
+
+Adds a geographical attribute to the entity. Currently they cannot be linked on the main map. Each entity has a single field for geo referencing internally.
+
+### Import Format
+
+`WKT_STRING` e.g. `POINT(1 1)`
+
+Any valid WKT string, a good overview of these strings can be found on [Wikipedia](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry).

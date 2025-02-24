@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.20" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" href="./favicon.ico" media="(prefers-color-scheme: no-preference)"><link rel="icon" href="./favicon.ico" media="(prefers-color-scheme: light)"><link rel="icon" href="./favicon-white.ico" media="(prefers-color-scheme: dark)"><title>Spacialist Documentation</title><meta name="description" content="A documentation for the Spacialist project">
+    <link rel="preload" href="/spacialist-docs/assets/style-CYYwwfxH.css" as="style"><link rel="stylesheet" href="/spacialist-docs/assets/style-CYYwwfxH.css">
+    <link rel="modulepreload" href="/spacialist-docs/assets/app-BRItzm5o.js"><link rel="modulepreload" href="/spacialist-docs/assets/404.html-DTeljwXx.js">
+    <link rel="prefetch" href="/spacialist-docs/assets/index.html-zgeHEkLF.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/coding-structure.html-DFaJKJdD.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/coding-style.html-DSBGrxlX.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/docs.html-D4Gy2y3n.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/overview.html-BpkQSM64.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/plugins.html-CO4IY5RQ.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/attribute-types.html-D5OMEiT4.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/attribute.html-Csy_3XXi.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/bibliography.html-DUf4SoIW.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/data-analysis.html-DbihJYXB.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/data-importer.html-DAj27AWM.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/data-model.html-Clx1zGI7.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/entity-type.html-DfB86P-E.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/geodata.html-DFvtNQyU.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/overview.html-D_Yqoq1Q.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/thesaurus.html-C_h0bfiF.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/attribute.html-BtdgeSb1.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/entity_type.html-07DRTj6m.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/export-types.html-D_aJwAq-.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/refresh-testing.html-0wAQ4Uyy.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/vue-structure.html-BmM-Frd2.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/testing-data.html-CtoEQZz_.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-1f3eaa04><main class="page" data-v-1f3eaa04><div vp-content data-v-1f3eaa04><h1 data-v-1f3eaa04>404</h1><blockquote data-v-1f3eaa04>There&#39;s nothing here.</blockquote><a class="route-link" href="/spacialist-docs/" data-v-1f3eaa04>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/spacialist-docs/assets/app-BRItzm5o.js" defer></script>
+  </body>
+</html>

@@ -3,6 +3,16 @@
 The Spacialist provides a big variety of different attribute types that can be used inside your [Data Model](/user/data-model).
 Named versions of those *Attribute Types* are used to populate the [Entity Types](./entity-type).
 
+
+| Boolean<br>(yes / no) | Date              | Number | Sets                 | Reference | Lists | Text  | Geography  |
+|-------------|-----------------------|------------|--------------------------|---------------|-----------|-----------|----------------|
+| Checkbox    | Date                  | Si-Unit    | Entity                   | URL           | List      | Textbox   | WKT            |
+|             | DateRange             | Percentage | Entity (Multiple Choice) | Iconclass     | Table     | Textfield |                |
+|             | Time Period           | Float      | Single Choice Dropdown   | RISM          |           | Rich-Text |                |
+|             | Time Period And Epoch | Int        | Multiple Choice Dropdown |               |           |           |                |
+|             |                       | Dimension  |                          |               |           |           |                |
+
+
 In the next section we'll introduce all available attribute types, what they are used for and how the import data has to be formatted. Note the following special symbols that may be used in the formatting, which will not be typed and have only semantic meaning.
 
 + ... - is a placeholder for various content

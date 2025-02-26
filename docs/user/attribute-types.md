@@ -4,13 +4,13 @@ The Spacialist provides a big variety of different attribute types that can be u
 Named versions of those *Attribute Types* are used to populate the [Entity Types](./entity-type).
 
 
-| Boolean<br>(yes / no) | Date              | Number | Sets                 | Reference | Lists | Text  | Geography  |
-|-------------|-----------------------|------------|--------------------------|---------------|-----------|-----------|----------------|
-| Checkbox    | Date                  | Si-Unit    | Entity                   | URL           | List      | Textbox   | WKT            |
-|             | DateRange             | Percentage | Entity (Multiple Choice) | Iconclass     | Table     | Textfield |                |
-|             | Time Period           | Float      | Single Choice Dropdown   | RISM          |           | Rich-Text |                |
-|             | Time Period And Epoch | Int        | Multiple Choice Dropdown |               |           |           |                |
-|             |                       | Dimension  |                          |               |           |           |                |
+| Boolean<br>(yes / no) | Date                                            | Number                                 | Sets                                                  | Reference               | Lists         | Text                    | Geography             |
+|-----------------------|-------------------------------------------------|----------------------------------------|-------------------------------------------------------|-------------------------|---------------|-------------------------|-----------------------|
+| [Checkbox](#checkbox) | [Date](#date)                                   | [Si-Unit](#si-unit)                    | [Entity](#entity)                                     | [URL](#url)             | [List](#list) | [Textbox](#textbox)     | [WKT](#wkt-geography) |
+|                       | [DateRange](#date-range)                        | [Percentage](#percentage)              | [Entity (Multiple Choice)](#entity-multiple-choice)   | [Iconclass](#iconclass) | Table         | [Textfield](#textfield) |                       |
+|                       | [Time Period](#time-period)                     | [Float](#numeric-input-floating-point) | [Single Choice Dropdown](#single-choice-dropdown)     | [RISM](#rism)           |               | [Rich-Text](#richtext)  |                       |
+|                       | [Time Period And Epoch](#time-period-and-epoch) | [Int](#numeric-input-integer)          | [Multiple Choice Dropdown](#multiple-choice-dropdown) |                         |               |                         |                       |
+|                       |                                                 | [Dimension](#dimension)                |                                                       |                         |               |                         |                       |
 
 
 In the next section we'll introduce all available attribute types, what they are used for and how the import data has to be formatted. Note the following special symbols that may be used in the formatting, which will not be typed and have only semantic meaning.
@@ -225,7 +225,7 @@ To use the counter you must use the `%d`marker during the creation of this attri
 The order of the enumeration is the time the entity was created. To ensure always `n`glyphs in the counter (e.g. #003) you may use the syntax `%03d`.
 
 ::: warning
-ThiA serial is not a persistent id, as it may change. When some entities are created at the same time or an entity type receives or loses this attribute, the enumeration will change!
+This serial is not a persistent id, as it may change. When some entities are created at the same time or an entity type receives or loses this attribute, the enumeration will change!
 ::: 
 
 ### Import Format

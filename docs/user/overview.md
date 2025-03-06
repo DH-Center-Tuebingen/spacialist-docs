@@ -18,8 +18,10 @@ grid:
     details: Basic bibliography management, allowing BibTex import and export.
   - icon: "/images/feature-icons/user.svg"
     title: User & Role Management
+    link: "./user-and-role-management.md"
     details: Manages user accounts and assign them specific roles with fully customizable rights and permissions.
   - icon: "/images/feature-icons/collab.svg"
+    link: "./collaboration"
     title: Collaboration
     details: Working on the same dataset as a team, managing certainty, literature and commenting on the data directly.
   - icon: "/images/feature-icons/plugins.svg"

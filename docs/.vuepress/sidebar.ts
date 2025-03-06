@@ -5,13 +5,21 @@ export default [
         prefix: '/user/',
         children: [
             'overview',
-            'geodata',
             'thesaurus',
-            'data-model',
-            'entity-type',
-            'attribute-types',
-            'attribute',
+            'user-and-role-management',
+            {
+                text: 'Data Model',
+                link: 'data-model',
+                children: [
+                    'entity-type',
+                    'attribute',
+                    'attribute-types',
+                ]
+            },
+            'entity',
+            'collaboration',
             'bibliography',
+            'geodata',
             'data-importer',
             'data-analysis',
         ]

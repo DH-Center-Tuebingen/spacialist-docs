@@ -4,8 +4,8 @@
 
 .vp-hero-actions {
     justify-content: center;
-    
-    
+
+
 }
 
 .vp-hero-action-button {
@@ -14,4 +14,71 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+
+.theme-default-content {
+
+    img {
+        display: block;
+        border-radius: 5px;
+        margin: 3rem auto;
+    }
+    
+    figure {
+        width: fit-content;
+        display: block;
+        margin: 3rem auto;
+        img {
+            margin: 0;
+        }
+        
+        figcaption {
+            margin-top: 1rem;
+            font-style: italic;
+            
+            &:before {
+                content: 'Figure';
+                margin-right: .5rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    table {
+        border-radius: 10px;
+        border-collapse: collapse;
+        border: 2px solid var(--vp-c-border-hard, #d1d4d7);
+
+        > thead > tr:first-child {
+            border-top: none;
+
+            th {
+                border-top: none;
+            }
+        }
+
+        > thead > tr > th:first-child {
+            border-left: none;
+        }
+
+        > thead > tr > th:last-child {
+            border-right: none;
+        }
+
+        > tbody > tr > td:first-child {
+            border-left: none;
+        }
+
+        > tbody > tr > td:last-child {
+            border-right: none;
+        }
+
+        > tbody > tr:last-child {
+            border-bottom: none;
+
+            td {
+                border-bottom: none;
+            }
+        }
+    }
 }

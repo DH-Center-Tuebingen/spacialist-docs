@@ -116,4 +116,22 @@ a.vp-feature {
         filter: brightness(1);
     }
 }
+
+@media (min-width: 1200px){
+    .vp-feature {
+        max-width: 23%;
+        flex-basis: 23%;
+    }
+}
+
+@media (max-width: 920px){
+    .vp-feature {
+        max-width: 46%;
+        flex-basis: 46%;
+    }
+}
+
+
+
+
 </style>

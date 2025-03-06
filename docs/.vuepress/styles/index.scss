@@ -1,11 +1,15 @@
 :root {
     --content-width: 1080px;
+    
+    --border-radius: 10px;
+    
+    --small-spacing-vertical: .5rem;
+    --small-spacing-horizontal: 1rem;
+    --small-spacing: var(--small-spacing-vertical) var(--small-spacing-horizontal);
 }
 
 .vp-hero-actions {
     justify-content: center;
-
-
 }
 
 .vp-hero-action-button {
@@ -16,11 +20,31 @@
     text-overflow: ellipsis;
 }
 
+.vp-page-nav {
+    border-top: none;
+    
+    > .route-link {
+        border: none;
+        padding: var(--small-spacing);
+        border-radius: var(--border-radius);
+        
+        &.next{
+            margin-right: calc(var(--small-spacing-horizontal) * -1);
+        }
+        
+        &.prev {
+            margin-left: calc(var(--small-spacing-horizontal) * -1);
+        }
+    }
+    
+    
+}
+
 .theme-default-content {
 
     img {
         display: block;
-        border-radius: 5px;
+        border-radius: var(--border-radius);
         margin: 3rem auto;
     }
     
@@ -45,7 +69,10 @@
     }
 
     table {
-        border-radius: 10px;
+        width: fit-content;
+        margin: 3rem auto;
+        
+        border-radius: var(--border-radius);
         border-collapse: collapse;
         border: 2px solid var(--vp-c-border-hard, #d1d4d7);
 

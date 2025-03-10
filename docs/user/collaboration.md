@@ -9,7 +9,7 @@ User have the ability to leave comments on every entity and can discuss ideas or
 
 ## Bibliography
 
-Users can reference Bibliography from the managed [_Bilbiography_](./bibliography.md) directly on every entity[1].
+Users can reference Bibliography from the managed [_Bibliography_](./bibliography.md) directly on every entity[1].
 
 [1]  First released in version 0.11
 

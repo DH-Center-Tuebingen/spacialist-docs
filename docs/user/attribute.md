@@ -22,33 +22,33 @@ When adding an attribute to an [_Entity Type_](./entity-type.md) you can specify
 Furthermore, you can define multiple _Dependency Groups[1]_, to cover more complex cases.
 Inside the group you have one operand and over the other groups you have it's counterpart (e.g. in the groups _AND_ and inbetween groups _OR_).
 
-| Attribute Type        | Supporter Rules                                                         | 
-| ---                   | ---                                                                     | 
+| Attribute Type        | Supporter Rules                                                         |
+| ---                   | ---                                                                     |
 | boolean               | =, !=                                                                   |
-| date                  | =, !=, ?, !?, <, <=, >, >=                                              |
+| date                  | =, !=, **?, !?,** <, <=, >, >=                                          |
 | daterange             | -                                                                       |
-| dimension             | =, !=                                                                   |
-| double                | =, !=, ?, !?, <, <=, >, >=                                              | 
+| dimension             | -                                                                       |
+| double                | =, !=, <, <=, >, >=                                                     |
 | entity                | =, !=                                                                   |
 | entity-mc             | =, !=                                                                   |
-| geography             | =, !=, ?, !?                                                            | 
-| iconclass             | =, !=, ?, !?                                                            | 
-| integer               | =, !=, ?, !?, <, <=, >, >=                                              | 
-| list                  | =, !=                                                                   |
-| percentage            | =, !=, ?, !?, <, <=, >, >=                                              | 
-| richtext              | =, !=, ?, !?                                                            | 
-| rism                  | =, !=, ?, !?                                                            | 
-| serial                | =, !=, ?, !?                                                            | 
-| si-unit               | =, !=, ?, !?, <, <=, >, >=                                              | 
-| sql                   | =, !=                                                                   |
-| string-sc             | =, !=, ?, !?                                                            | 
-| string-mc             | =, !=, ?, !?                                                            | 
-| table                 | =, !=                                                                   |
-| textbox               | =, !=, ?, !?                                                            | 
-| textfield             | =, !=, ?, !?                                                            | 
-| timeperiod            | =, !=                                                                   |
+| geography             | -                                                                       |
+| iconclass             | =, !=, ?, !?                                                            |
+| integer               | =, !=, <, <=, >, >=                                                     |
+| list                  | =, !=, ?, !?                                                            |
+| percentage            | =, !=, <, <=, >, >=                                                     |
+| richtext              | ?, !?                                                                   |
+| rism                  | =, !=, ?, !?                                                            |
+| serial                | -                                                                       |
+| si-unit               | =, !=, <, <=, >, >=                                                     |
+| sql                   | -                                                                       |
+| string-sc             | =, !=, ?, !?                                                            |
+| string-mc             | =, !=, ?, !?                                                            |
+| table                 | -                                                                       |
+| textbox               | =, !=, ?, !?                                                            |
+| textfield             | =, !=, ?, !?                                                            |
+| timeperiod            | -                                                                       |
 | timeperiod and epoch  | -                                                                       |
 | url                   | =, !=, ?, !?                                                            |
-| userlist              | =, !=                                                                   |
+| userlist              | -                                                                       |
 
 [1] **First Released in 0.11**

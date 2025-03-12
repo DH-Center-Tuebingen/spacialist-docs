@@ -15,6 +15,17 @@ Creates a subsection on an [_Entity Type_](./entity-type.md) to bundle the follo
 _Attribute Dependencies_ are a feature to conditionally hide attributes. 
 When adding an attribute to an [_Entity Type_](./entity-type.md) you can specify a variety of conditions on when those attributes should be shown. 
 
+To add a dependency you hover over the _Attribute_ you attached to the _Entity Type_. And press the _edit_ button. The yellow icon marks attributes that habe an dependency defined.
+
+![Image of the entity attribute](./images/inputs/edit-entity-attribute.png)
+
+In the edit dialog, you see this view, where you can add new rules to the dependency. And you can set if either one of the rules must match (Or) or of all rules must match (And). Furthermore you have the ability to add multiple groups (+) to create more complex rules.
+
+![Image of the dependency input element](./images/inputs/dependency-input.png)
+
+You can use varios operators, to accomplish the effect you desire. All available operators are listed below.
+Further down, you can find which operators apply for the different _Attribute Types_.
+
 | Condition     | Effect                                                                           | Symbol  | Technical    |
 | ---           | ---                                                                              | ---     |---           |
 | set           | The attribute does contain a value, therefore is **not** empty                   | ?       | x != null    |

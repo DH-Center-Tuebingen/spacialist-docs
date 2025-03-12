@@ -2,8 +2,15 @@
 
 An attribute is a certain implementation of an Attribute in combination with a [Dictionary Label](./thesaurus). These attributes are applied to [_Entity Types_](./entity-type.md) to create Spacialists [_Data Model_](./data-model.md).
 
-## Dependencies
+## System Attributes
 
+Some attributes may be provided by spacialist by default. Currently (v.0.11) there is only the Group Separator
+
+### Group Separator
+
+Creates a subsection on an [_Entity Type_](./entity-type.md) to bundle the following attributes (up to the next _Group Separator_ or the end) insisde a separate tab in the _Entity View_.
+
+## Dependencies
 
 _Attribute Dependencies_ are a feature to conditionally hide attributes. 
 When adding an attribute to an [_Entity Type_](./entity-type.md) you can specify a variety of conditions on when those attributes should be shown. 
@@ -20,7 +27,7 @@ When adding an attribute to an [_Entity Type_](./entity-type.md) you can specify
 | greater equal | The attribute is greater or equal the selected value _y_                         | >=      | x >= y       |
 
 Furthermore, you can define multiple _Dependency Groups[1]_, to cover more complex cases.
-Inside the group you have one operand and over the other groups you have it's counterpart (e.g. in the groups _AND_ and inbetween groups _OR_).
+Inside the group you have one operand and over the other groups you have it's counterpart (e.g. in the groups _AND_ and inbetween groups _OR_). If a system separator is hidden, it's whole tab will not show up.
 
 | Attribute Type        | Supporter Rules                                                         |
 | ---                   | ---                                                                     |
@@ -50,5 +57,7 @@ Inside the group you have one operand and over the other groups you have it's co
 | timeperiod and epoch  | -                                                                       |
 | url                   | =, !=, ?, !?                                                            |
 | userlist              | -                                                                       |
+|**System Attributes** ||
+|system-separator | - |
 
 [1] **First Released in 0.11**

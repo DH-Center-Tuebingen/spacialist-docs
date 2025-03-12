@@ -1,7 +1,7 @@
 # Attribute Types
 
 The Spacialist provides a big variety of different attribute types that can be used inside your [Data Model](/user/data-model).
-Named versions of those _Attribute Types_ are used to populate the [Entity Types](./entity-type). There are additional [_System Attributes_](./attribute.md#system_attributes) which don't need to be created but can be used right away.
+Named versions of those _Attribute Types_ are used to populate the [Entity Types](./entity-type). There are additional [_System Attributes_](./attribute.md#system-attributes) which don't need to be created but can be used right away.
 
 
 | Boolean<br>(yes / no) | Date                                            | Number                                 | Sets                                                  | Reference               | Lists         | Text                    | Geography             |

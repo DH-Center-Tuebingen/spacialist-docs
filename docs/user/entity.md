@@ -21,8 +21,5 @@ You may export the sub-tree of a selected entity into a collection of CSV files 
 If only a single entity-type is exported, a CSV file will be downloaded. If multiple CSV files are generated, you'll receive a ZIP archieve with one CSV file for every _Entity Type_.
 
 ::: warning
-The following _Entity Types_ are not included in an export:
-- Group Separator
-- SQL
-- Serial
+The following _Entity Types_ are not included in an export: Group Separator, SQL & Serial
 :::

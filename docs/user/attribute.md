@@ -40,6 +40,10 @@ Further down, you can find which operators apply for the different _Attribute Ty
 Furthermore, you can define multiple _Dependency Groups[1]_, to cover more complex cases.
 Inside the group you have one operand and over the other groups you have it's counterpart (e.g. in the groups _AND_ and inbetween groups _OR_). If a system separator is hidden, it's whole tab will not show up.
 
+
+**Available Dependency Types For Each Entity Type**
+
+
 | Attribute Type        | Supporter Rules                                                         |
 | ---                   | ---                                                                     |
 | boolean               | =, !=                                                                   |

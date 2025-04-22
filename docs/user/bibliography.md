@@ -11,7 +11,7 @@ those items into Spacialist using the BibTex export of said software.
 
 ## Available Fields
 
-Spacialist supports the standard fields of BibTex as defined in it's [Standard](https://ftp.gwdg.de/pub/ctan/biblio/bibtex/base/btxdoc.pdf).
+Spacialist supports the standard fields of BibTex as defined in it's [Standard](https://ftp.gwdg.de/pub/ctan/biblio/bibtex/base/btxdoc.pdf) (3.Entries, p.8f).
 
 Additionally we support the following fields:
 

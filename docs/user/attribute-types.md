@@ -259,9 +259,9 @@ A dropdown that is populated by thesaurus concepts and allows the selection of e
 The concept name must match excactly the concept that you want to import. The concept can be in any language.
 
 ## Textbox
-![Image of textbox input](./images/attribute-types/textbox.png)
+![Image of stringfield input](./images/attribute-types/stringfield.png)
 
-A textbox for short, unformatted texts.
+A textarea for longer, unformatted texts.
 
 ### Import Format
 
@@ -271,9 +271,9 @@ A textbox for short, unformatted texts.
 
 ## Textfield
 
-![Image of stringfield input](./images/attribute-types/stringfield.png)
+![Image of textbox input](./images/attribute-types/textbox.png)
 
-A textarea for longer, unformatted texts.
+A textbox for short, unformatted texts.
 
 ### Import Format
 

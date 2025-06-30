@@ -5,6 +5,7 @@ export default [
         prefix: '/user/',
         children: [
             'overview',
+            'getting-started',
             'thesaurus',
             'user-and-role-management',
             {
@@ -48,6 +49,7 @@ export default [
                     'refresh-testing'
                 ]
             },
+            'common-issues',
         ]
     }
 ]

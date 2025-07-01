@@ -31,6 +31,7 @@ export default [
         prefix: '/developer/',
         children: [
             'overview',
+            'environment-setup',
             'coding-structure',
             'plugins',
             {

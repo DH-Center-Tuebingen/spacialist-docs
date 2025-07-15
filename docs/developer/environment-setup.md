@@ -24,6 +24,11 @@ APP_FORCE_URL=<boolean=false>
 APP_DEBUG=<boolean=false>
 # Can be used to get additional debug logs. 
 
+APP_AVATAR_STORAGE_LOCATION=../spacialist/storage/private/avatars
+# [THESAUREX ONLY]
+# Defines the directory system path to the spacialist avatars.
+# Can be an absolute or a relative path.
+
 ASSET_URL=<string=/> 
 # A Laravel variable responsible for setting Vite's base url: 
 # The laravel server serves all files at localhost:8000, however vite is running on another host

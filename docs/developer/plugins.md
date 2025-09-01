@@ -33,10 +33,6 @@ Upload > Install > Activate >< Deactivate < Uninstall < Remove
 
 \* required
 
-
-
-
-
 ## Plugin Permissions
 
 Plugins can be hooked to a variety of locations of the Spacialist. 
@@ -58,7 +54,7 @@ Plugins can be hooked to a variety of locations of the Spacialist.
 + as Views
     + Routes
     
-### Operations
+## Register
 
 Currently available options are:
 
@@ -82,6 +78,28 @@ register({id*, i18n, routes, store})
 + **i18n** [_i18nObject_](#i18n-object) - automatically calls the [_registerI18N\(i18n\)_](#register-i18n) method
 + **routes** - [_routesArray_](#routes-array) automatically calls the [_registerRoutes\(routes\)_](#register-routes) method
 + **store** store of the plugin to register
+
+
+#### Register Components
+
+You can register components either to use them as [Attribute](/spacialist-docs/user/attribute) or simply
+register a component for other plugins to utilize.
+
+```javascript
+registerComponent({
+    of*,
+    key*,
+    type*,
+    datatype**,
+    component*,
+})
+```
+
++ **of** _string_ - unique id string of the plugin.
++ **key** _string_ - unique key string of the preference.
++ **type** _['attribute' | 'component'] - if the component is used as attribute.
++ **datatype** _string_ - name of the datatype (** required if type is attribute).
++ **component** _component_ - component to mount
 
 #### Register I18N
 The i18n method is used to register the i18n files of the plugin. 

@@ -25,7 +25,7 @@ APP_DEBUG=<boolean=false>
 # Can be used to get additional debug logs. 
 
 APP_AVATAR_STORAGE_LOCATION=../spacialist/storage/app/private/avatars
-# [THESAUREX ONLY]
+# [THESAUREX ONLY] since 0.11.0-beta.1
 # Defines the directory system path to the spacialist avatars.
 # Can be an absolute or a relative path.
 

@@ -28,8 +28,8 @@ APP_PATH=<string=/project/subpath/>
 # This should be set to the common root of Spacialist and Thesaurex so that the user-specific 'remember-web'
 # cookie is shared between both instances. For more details checkout the Cookie section.
 
-APP_AVATAR_STORAGE_LOCATION=../spacialist/storage/private/avatars
-# [THESAUREX ONLY]
+APP_AVATAR_STORAGE_LOCATION=../spacialist/storage/app/private/avatars
+# [THESAUREX ONLY] since 0.11.0-beta.1
 # Defines the directory system path to the spacialist avatars.
 # Can be an absolute or a relative path.
 

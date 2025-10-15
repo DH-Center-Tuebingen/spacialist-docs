@@ -13,16 +13,20 @@ APP_ENV=<string=production>
 APP_KEY=<base64:32bit-key> 
 # Used by Laravel's encrypter service. Can be generated with 'php artisan key:generate`
 
-
 APP_URL=<string=http://localhost> #set this to your proxy url if needed and enable it by setting APP_FORCE_URL to true
 
 APP_FORCE_URL=<boolean=false>
 # Can be set to enforce the app URL using your proxy url.
 # Generally the same as APP_URL.
 
-
 APP_DEBUG=<boolean=false>
 # Can be used to get additional debug logs. 
+
+APP_PATH=<string=/project/subpath/>
+# Defines the 'scope' of all cookies that are being set.
+# This is only required, when you are running multiple Spacialist instances on subpaths on the same domain.
+# This should be set to the common root of Spacialist and Thesaurex so that the user-specific 'remember-web'
+# cookie is shared between both instances. For more details checkout the Cookie section.
 
 APP_AVATAR_STORAGE_LOCATION=../spacialist/storage/private/avatars
 # [THESAUREX ONLY]

@@ -50,6 +50,14 @@ export default [
                     'refresh-testing'
                 ]
             },
+            {
+                text: 'Framework',
+                collapsible: true,
+                prefix: '/developer/framework/',
+                children: [
+                    'auth'
+                ]
+            },
             'common-issues',
         ]
     }

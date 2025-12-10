@@ -62,3 +62,8 @@ When designing your roles keep in mind, that you can apply multiple roles to a u
 The _Working Groups_ are an extension on the premission system provided by the [_Role & Permission_](../user/permission) system. 
 This allows the creation of groups, users can be assigned to. Access to certain [Entities](../entity.md) can be managed for the whole
 groups using this feature.
+
+## Access Points
+
+_Currently under development_
+<!-- TODO:: PROVIDE DESCRIPTION AND USAGE OF ACCESS POINTS  -->

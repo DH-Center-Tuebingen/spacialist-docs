@@ -24,7 +24,7 @@ Upload > Install > Activate >< Deactivate < Uninstall < Remove
     - 📂 components
     - App.vue
     - main.js
-- manifest.xml*
+- plugin.xml*
 - package.json*
 - index.html*
 - README.md*
@@ -54,7 +54,12 @@ Plugins can be hooked to a variety of locations of the Spacialist.
 + as Views
     + Routes
     
-## Register
+## Plugin Accesspoints
+
+_Currently under development_
+<!-- TODO:: PROVIDE DESCRIPTION AND USAGE OF PLUGIN ACCESS POINTS AND REFERENCE TO 'user-and-role-management.md' -->
+    
+## Registering Capabilities
 
 Currently available options are:
 

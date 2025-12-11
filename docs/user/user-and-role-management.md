@@ -65,5 +65,11 @@ groups using this feature.
 
 ## Access Points
 
+Access points allows developers to create functionalities, that might only be accessible for certain users and/or do not require the whole Spacialist application to be loaded.
+Using access points plugin developers can, for example, provide a simplified input form for a user group without the need for administrators to set proper permissions afterwards.
+It is also possible to restrict user access to access points. This way it is possible to allow a group of users to only access the simplified input form or to access everything else but this form.
+To do this an administrator can set the allowed access points for each individual user in the _User Management_. No access points is the same as all access points selected, but without the need to update the list after a new access point is available.
+To see how access points can be added to a plugin, see [Plugins](/spacialist-docs/developer/plugins)
+
 _Currently under development_
 <!-- TODO:: PROVIDE DESCRIPTION AND USAGE OF ACCESS POINTS  -->

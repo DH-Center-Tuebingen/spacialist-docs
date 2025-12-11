@@ -44,7 +44,6 @@ Plugins can be hooked to a variety of locations of the Spacialist.
 + Models
 + Storage
 
-
 ### Frontend
 
 + as Links
@@ -57,8 +56,28 @@ Plugins can be hooked to a variety of locations of the Spacialist.
 ## Plugin Accesspoints
 
 _Currently under development_
-<!-- TODO:: PROVIDE DESCRIPTION AND USAGE OF PLUGIN ACCESS POINTS AND REFERENCE TO 'user-and-role-management.md' -->
-    
+
+Plugins can define additional access points. For a detailed description what access points are for refer to [User and Role Management](/spacialist-docs/user/user-and-role-management).
+
+To add access points, they have to be added to the `info.xml` file under the optional `<accesspoints>` tag.
+Each access point is defined by the `<accesspoint>` tag and has three required sub-tags:
+
+1. `<path>`: unique path that is added to the Spacialist instance's root path under which this access point can be accessed.
+2. `<id>`: unique identifier for this access point across all plugins.
+3. `<label>`: label that is used to display the access point in the Spacialist UI. This is a path to a label in the plugin's i18n files using dot notation
+
+### Example
+
+```xml
+<accesspoints>
+    <accesspoint>
+        <path>/path_to_access_point</path> <!-- full path e.g. https://spacialist.example.com/path_to_access_point -->
+        <id>ExamplePluginId</id>
+        <label>path.to.accesspoint.label</label>
+    </accesspoint>
+</accesspoints>
+```
+
 ## Registering Capabilities
 
 Currently available options are:

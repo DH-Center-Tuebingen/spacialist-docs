@@ -1,98 +1,31 @@
-# Plugin
+# Frontend Capabilities
 
-::: danger
-The Plugin system is currently under revision and is most likely to change significantly in release 0.12
-:::
-
-Plugins provide users and developers the ability to have a modular system of extending the functionality of the spacialist software without the need of having all functionality in one gigantic application. 
+A lot of functionalities are already available when only 
+working with the frontend. There are some functions that need [Initial Registration](#initial-registration)
+on startup in your script.js. Additionally the core exposes an SpPS ()
 
 
-## Plugin Flow
 
-Upload > Install > Activate >< Deactivate < Uninstall < Remove
+## Initial Registration
 
-## Plugin Structure
+Specific functionality may be registered to the frontend by calling register functions
+on startup. Those functons are:
 
-- 📂 .vscode
-- 📂 App*
-    - Main.php*
-- 📂 build
-- 📂 Migration    
-- 📂 routes
-- 📂 storage
-- 📂 src
-    - 📂 components
-    - App.vue
-    - main.js
-- plugin.xml*
-- package.json*
-- index.html*
-- README.md*
-- CHANGELOG.md*
-- vite.config.js*
+| Function                                     | Description |
+| ---                                          | --- |
+|[register](#register)__*__                        | Required to register the frontend capabilities of the plugin, but can additonally be used to register various other features.  |
+|[registerComponent](#register-components)     | Registers a component to be used as an attribute or to be consumed by another plugin.
+|[registerI18N](#register-i18n)                | Register additional i18n translations for the plugin. |
+|[registerRoutes](#register-routes)            | Register additional vue routes used by the plugin.    |
+|[registerPreference](#register-preferences)   | Register additional preferences                       |
+|[intoSlot](#into-slot)                        | Register a component into a plugin slot (e.g. Maps-Plugin registered into the 'Tab' slot to show the map)  |
 
-\* required
+__* is required to be called by the plugin (unless it only uses PHP)__
 
-## Plugin Permissions
+### Universal Register
 
-Plugins can be hooked to a variety of locations of the Spacialist. 
-
-### Backend
-
-+ Migrations
-+ Routes
-+ Models
-+ Storage
-
-### Frontend
-
-+ as Links
-    + SettingsDropdown 
-+ as Components
-    + DetailsTab
-+ as Views
-    + Routes
-    
-## Plugin Accesspoints
-
-_Currently under development_
-
-Plugins can define additional access points. For a detailed description what access points are for refer to [User and Role Management](/spacialist-docs/user/user-and-role-management).
-
-To add access points, they have to be added to the `info.xml` file under the optional `<accesspoints>` tag.
-Each access point is defined by the `<accesspoint>` tag and has three required sub-tags:
-
-1. `<path>`: unique path that is added to the Spacialist instance's root path under which this access point can be accessed.
-2. `<id>`: unique identifier for this access point across all plugins.
-3. `<label>`: label that is used to display the access point in the Spacialist UI. This is a path to a label in the plugin's i18n files using dot notation
-
-### Example
-
-```xml
-<accesspoints>
-    <accesspoint>
-        <path>/path_to_access_point</path> <!-- full path e.g. https://spacialist.example.com/path_to_access_point -->
-        <id>ExamplePluginId</id>
-        <label>path.to.accesspoint.label</label>
-    </accesspoint>
-</accesspoints>
-```
-
-## Registering Capabilities
-
-Currently available options are:
-
-+ [register*](#register)
-+ [registerI18N](#register-i18n)
-+ [registerRoutes](#register-routes)
-+ [registerPreference](#register-preferences)
-+ [intoSlot](#into-slot)
-
-* is required to be called by the plugin (unless it only uses PHP)
-
-#### Register
-
-You need to register a plugin with the register function:
+You need to register a plugin with the register function to make the core application
+aware of the plugin script.
 
 ```javascript
 register({id*, i18n, routes, store})
@@ -104,10 +37,10 @@ register({id*, i18n, routes, store})
 + **store** store of the plugin to register
 
 
-#### Register Components
+### Register Components
 
 You can register components either to use them as [Attribute](/spacialist-docs/user/attribute) or simply
-register a component for other plugins to utilize.
+register a component for other plugins to utilize. Internally used components don't need to be registered to the core they will just be compiled by the bundler into the `script.js`
 
 ```javascript
 registerComponent({
@@ -125,7 +58,7 @@ registerComponent({
 + **datatype** _string_ - name of the datatype (** required if type is attribute).
 + **component** _component_ - component to mount
 
-#### Register I18N
+### Register I18N
 The i18n method is used to register the i18n files of the plugin. 
 
 ```javascript
@@ -135,7 +68,7 @@ registerI18N(id*, i18n*)
 + **Id** _string_ - unique id string of the plugin. 
 + **i18n** [_i18nObject_](#i18n-object) - the i18n object of the plugin.
 
-##### I18N Object
+#### I18N Object
 
 The i18n object is a JSON object with the following structure:
 
@@ -152,7 +85,7 @@ The i18n object is a JSON object with the following structure:
 }
 ```
 
-#### Register Routes
+### Register Routes
 The routes method is used to register the routes of the plugin. 
 
 ```javascript
@@ -161,7 +94,7 @@ registerRoutes(id*, routes*)
 + **Id** _string_ - unique id string of the plugin.
 + **routes** [_routesArray_](#routes-array) - the routes object of the plugin.
 
-##### Routes Array
+#### Routes Array
 
 Array that contains [vue-router routes](https://router.vuejs.org/api/interfaces/RouteRecordNormalized.html). For example:
 
@@ -180,7 +113,7 @@ Array that contains [vue-router routes](https://router.vuejs.org/api/interfaces/
 ]
 ```	
 
-#### Register Preferences
+### Register Preferences
 
 The preferences method is used to register the preferences of the plugin. 
 ```javascript
@@ -209,7 +142,7 @@ registerRoutes({
 + **component** _string_ - component of the preference.
 + **componentTag** _string_ - tag of the component.
 
-#### Into Slot
+### Into Slot
 
 The intoSlot method is used to register the plugin into a slot. E.g. the 'Tab' view of the details page. 
 

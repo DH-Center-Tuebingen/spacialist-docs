@@ -33,7 +33,22 @@ export default [
             'overview',
             'environment-setup',
             'coding-structure',
-            'plugins',
+            {
+                text: 'Plugins',
+                collapsible: true,
+                prefix: '/developer/plugins/',
+                children: [
+                    'legacy',
+                    'usage',
+                    'manifest',
+                    'frontend-capabilities',
+                    'i18n',
+                    'development',
+                    'plugin-log',
+                    'internal-structure',
+                    'plugin-features',
+                ] 
+            },
             {
                 text: 'Classes',
                 collapsible: true,

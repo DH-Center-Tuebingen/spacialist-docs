@@ -46,6 +46,7 @@ export default [
                     'development',
                     'plugin-log',
                     'internal-structure',
+                    'lifecycle',
                     'plugin-features',
                 ] 
             },

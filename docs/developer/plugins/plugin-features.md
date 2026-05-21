@@ -2,7 +2,9 @@
 
 All plugin features are registered as services inside the PluginManager's constructor.
 If you find a feature that is not yet documented, feel free to edit this page or send us
-a message to add it to the documentation.
+a message to add it to the documentation. The `PluginServices` are stored inside `App\Services\Plugin`.
+
+[[toc]]
 
 ## AccessPoints
 

@@ -334,3 +334,7 @@ Adds a geographical attribute to the entity. Currently they cannot be linked on 
 `WKT_STRING` e.g. `POINT(1 1)`
 
 Any valid WKT string, a good overview of these strings can be found on [Wikipedia](https://en.wikipedia.org/wiki/Well-known_text_representation_of_geometry).
+
+:::info
+The order of the Points is `POINT(Lon Lat)` and decimals must be separated by point.
+:::

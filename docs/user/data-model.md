@@ -5,7 +5,7 @@ While also restricting the data to an appropriate data type. This structure is d
 
 The *Data Model* contains all the _blueprints_ (in Spacialist: [Entity Types](./entity-type.md)) for the data you want to collect.
 Your actual data is then collected using [Entitites](./entity.md), which is an object created from one of those _"blueprints"_. 
-And each [Entity Type](./entity-type.md) is a composition of different [Attributes](./attribute.md), which are defined by an [Attrbiute Type](./attribute-types.md) 
+And each [Entity Type](./entity-type.md) is a composition of different [Attributes](./attribute.md), which are defined by an [Attribute Type](./attribute-types.md) 
 and a label (as defined in the Thesaurex). Those attributes can then be used on multiple different entities and make it possible to 
 have comparable data independent of _Entity Type_.
 

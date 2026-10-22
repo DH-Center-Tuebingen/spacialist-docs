@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="generator" content="VuePress 2.0.0-rc.23" />
+    <style>
+      :root {
+        --vp-c-bg: #fff;
+      }
+
+      [data-theme='dark'] {
+        --vp-c-bg: #1b1b1f;
+      }
+
+      html,
+      body {
+        background-color: var(--vp-c-bg);
+      }
+    </style>
+    <script>
+      const useChoice = localStorage.getItem('vuepress-color-scheme')
+      const systemStatus =
+        'matchMedia' in window
+          ? window.matchMedia('(prefers-color-scheme: dark)').matches
+          : false
+
+      if (useChoice === 'light') {
+        document.documentElement.dataset.theme = 'light'
+      } else if (useChoice === 'dark' || systemStatus) {
+        document.documentElement.dataset.theme = 'dark'
+      }
+    </script>
+    <link rel="icon" href="./favicon.ico" media="(prefers-color-scheme: no-preference)"><link rel="icon" href="./favicon.ico" media="(prefers-color-scheme: light)"><link rel="icon" href="./favicon-white.ico" media="(prefers-color-scheme: dark)"><title>Spacialist Documentation</title><meta name="description" content="A documentation for the Spacialist project">
+    <link rel="preload" href="/spacialist-docs/assets/style-B6gr0duT.css" as="style"><link rel="stylesheet" href="/spacialist-docs/assets/style-B6gr0duT.css">
+    <link rel="modulepreload" href="/spacialist-docs/assets/app-EFZZM_mt.js"><link rel="modulepreload" href="/spacialist-docs/assets/404.html-B_MiCl19.js">
+    <link rel="prefetch" href="/spacialist-docs/assets/index.html-CLB8tkCi.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/coding-structure.html-yDWkOvFZ.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/coding-style.html-CPAJ-_ow.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/common-issues.html-DoOgdeil.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/docs.html-oZaE--KU.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/environment-setup.html-D4_vbEEg.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/overview.html-1RBubpnp.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/attribute-types.html-CYcecK1d.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/attribute.html-COe2gj-o.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/bibliography.html-ArciRS93.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/collaboration.html-Dz1q0hvr.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/data-analysis-database-structure-pane.html-DpMX4qCR.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/data-analysis-options-pane.html-CtZ2A0Gl.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/data-analysis-result-pane.html-y8k081-x.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/data-analysis.html-Bs9dsays.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/data-importer.html-DVCoWA3R.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/data-model.html-Bub8m62j.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/entity-type.html-CjE-dtCB.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/entity.html-CvOSQml-.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/geodata.html-BXdyR7em.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/getting-started.html-BfkRdSPk.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/overview.html-FLRtzipG.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/selecting-an-attribute-type.html-DHnV8-Fi.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/thesaurus.html-q6undIJM.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/user-and-role-management.html-BDEi_-QM.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/attribute.html-C-cb55mv.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/entity_type.html-BbXQGONz.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/export-types.html-nWvRotzE.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/refresh-testing.html-sbV_iDI0.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/auth.html-CfD6WRvf.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/development.html-CI9nAD4_.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/frontend-capabilities.html-oyXBYspr.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/i18n.html-DBqvl3zP.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/internal-structure.html-CKKhZyAF.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/legacy.html-BazSnXge.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/lifecycle.html-UpBvm8uZ.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/manifest.html-Dc-UIiIT.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/plugin-features.html-C84dzYhk.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/plugin-log.html-C27j_dSc.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/usage.html-BRcTJZfo.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/vue-structure.html-C7MUfui0.js" as="script"><link rel="prefetch" href="/spacialist-docs/assets/testing-data.html-BLdB1EPa.js" as="script">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="vp-theme-container" vp-container data-v-b8921c23><main class="page" data-v-b8921c23><div vp-content data-v-b8921c23><h1 data-v-b8921c23>404</h1><blockquote data-v-b8921c23>There&#39;s nothing here.</blockquote><a class="route-link" href="/spacialist-docs/" data-v-b8921c23>Take me home</a></div></main></div><!--[--><!----><!--]--><!--]--></div>
+    <script type="module" src="/spacialist-docs/assets/app-EFZZM_mt.js" defer></script>
+  </body>
+</html>

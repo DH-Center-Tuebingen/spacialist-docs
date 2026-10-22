@@ -13,7 +13,7 @@ The upload process is strict on purpose to avoid adding unintended values. As th
 Your CSV table needs to be in UTF-8 format (see FAQ).
 
 ### Parent-Column if necessary
-When you want to place the elements into a specific location in the [Entity Tree](./entity.md#entity-tree), then you need to specify a parent path column, that defines the absolute path to the created (or updated) entity. This path is composed from the entity names, separated by double backslashed (`\\\\`).
+When you want to place the elements into a specific location in the [Entity Tree](./entity.md#entity-tree), then you need to specify a parent path column, that defines the absolute path to the created (or updated) entity. This path is composed from the entity names, separated by double backslashed (`\\`).
 
 ### Follow Attribute Type Import Standards
 
@@ -44,11 +44,23 @@ Your CSV file will be rendered at the bottom and show you a preview of your data
 
 After the file was dropped, the `Entity Settings` becomes available and the application automatically tries to guess the appropriate mapping. The table must be rendered correctly, so that you can associate the columns with the settings accordingly. You need to specify the following settings:
 
-| Name | Description | Auto-Mapping Keys| Required |
-|---|---|---|---|
-Entity Type | An import always targets one specific entity type as you must match the columns to the respective attributes of said Entity-Type (see Attribute Mapping). | - | * |
-Entity Name-Column | entity must be generated with a name. If the selected row has an empty value inside that column, the importer will not validate and the indiicator next to the label will be rendered in red. When hovering it'll tell you how many rows are invalid.  | name, key| * |
-Entity Parent Column | If the entities you are about to import are **NOT** top level entities, you must specify where they should be located inside the application. | parent, path | - |
+| Name | Description | Format | Auto-Mapping Keys| Required |
+|---|---|---|---|---|
+Entity Type | An import always targets one specific entity type as you must match the columns to the respective attributes of said Entity-Type (see Attribute Mapping). | _is selected_ | - | * |
+Entity Name-Column | An entity must have a name. If the selected row has an empty value inside that column, the importer will not validate and the indiicator next to the label will be rendered in red. When hovering it'll tell you how many rows are invalid. | string | name, key| * |
+Entity Parent Column | If the entities you are about to import are **NOT** top level entities, you must specify where they should be located inside the application. | string separated by '\\\\' | parent, path | - |
+
+
+### Preview Settings
+
+These settings are available only in certain preview builds and may change in the future:
+
+| Name | Description | Format | Auto-Mapping Keys| Required |
+|---|---|---|---|---|
+Reference (Literature) | Adds quotes to the reference tab. | citekey:description;citekey_2:description_2;...| reference, source | -
+Licence | Adds a license text to the metadata tab | string | licence | -
+Description (Contributors) | Adds text to the description field of the metadata tab | string | attribution, contributors, description | -
+
 
 ## Attribute Mapping
 
